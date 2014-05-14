@@ -5,7 +5,7 @@ How to use:
 ```term
 $ git clone git@github.com:heroku/app-setups-go-example.git
 ...
-$ go setup setup.go
+$ go build setup.go
 
 ./setup -apikey <api key> -archive https://github.com/balansubr/ruby-rails-sample/tarball/master/
 --> Created app fierce-reef-7523

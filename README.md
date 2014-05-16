@@ -1,4 +1,4 @@
-Simple Go script demonstrating use of the [Heroku Platform API app-setups resource]()
+Simple Go script demonstrating use of the [Heroku Platform API app-setups resource](https://devcenter.heroku.com/articles/setting-up-apps-using-the-heroku-platform-api)
 
 How to use:
 
@@ -7,7 +7,7 @@ $ git clone git@github.com:heroku/app-setups-go-example.git
 ...
 $ go build setup.go
 
-./setup -apikey <api key> -archive https://github.com/balansubr/ruby-rails-sample/tarball/master/
+./setup -archive https://github.com/balansubr/ruby-rails-sample/tarball/master/
 --> Created app fierce-reef-7523
 ----> App ID:42006200-c4ce-415e-8b76-8ce5ed7d960d
 ----> Setting up config vars and add-ons......Done.
@@ -18,4 +18,12 @@ $ go build setup.go
 --> App setup complete.
 ```
 
-You can get your api key by running `heroku auth:token` or from the [account page on Dashboard](https://dashboard.heroku.com/account).
+This will use the API key in your `.netrc` file, created with the standard `heroku login` command.
+
+
+If you want to specify a key explicitly, use the `-apikey` argument:
+
+    ./setup -apikey <api key> -archive https://github.com/balansubr/ruby-rails-sample/tarball/master/
+
+
+You can get your API key by running `heroku auth:token` or from the [account page on Dashboard](https://dashboard.heroku.com/account).

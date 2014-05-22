@@ -3,7 +3,7 @@ Simple Go script demonstrating use of the [Heroku Platform API app-setups resour
 How to use:
 
 ```term
-$ git clone git@github.com:heroku/app-setups-go-example.git
+$ git clone git@github.com:balansubr/app-setups-go-example.git
 ...
 $ go build setup.go
 
